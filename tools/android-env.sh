@@ -5,7 +5,12 @@ export ANDROID_SDK_ROOT=${ANDROID_HOME}
 export ANDROID_SDK_HOME=${ANDROID_HOME}
 export ANDROID_SDK=${ANDROID_HOME}
 
-export PATH=${PATH}:${ANDROID_HOME}/cmdline-tools/tools/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator:${ANDROID_HOME}/bin:
+export PATH=${PATH}:${ANDROID_HOME}/cmdline-tools/latest/bin
+export PATH=${PATH}:${ANDROID_HOME}/cmdline-tools/tools/bin
+export PATH=${PATH}:${ANDROID_HOME}/tools/bin
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH=${PATH}:${ANDROID_HOME}/emulator
+export PATH=${PATH}:${ANDROID_HOME}/bin
 
 function print_header() {
     figlet SBB CFF FFS
