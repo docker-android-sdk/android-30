@@ -36,6 +36,7 @@ else
   unzip commandlinetools-linux.zip
   mkdir cmdline-tools
   mv tools cmdline-tools/
+  rm commandlinetools-linux.zip
 fi
 
 echo "Make sure repositories.cfg exists"

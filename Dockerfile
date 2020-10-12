@@ -10,6 +10,7 @@ ENV ANDROID_SDK       ${ANDROID_HOME}
 ENV PATH "${PATH}:${ANDROID_HOME}/cmdline-tools/latest/bin"
 ENV PATH "${PATH}:${ANDROID_HOME}/cmdline-tools/tools/bin"
 ENV PATH "${PATH}:${ANDROID_HOME}/tools/bin"
+ENV PATH "${PATH}:${ANDROID_HOME}/build-tools/30.0.2"
 ENV PATH "${PATH}:${ANDROID_HOME}/platform-tools"
 ENV PATH "${PATH}:${ANDROID_HOME}/emulator"
 ENV PATH "${PATH}:${ANDROID_HOME}/bin"
