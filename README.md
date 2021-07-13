@@ -22,7 +22,7 @@ Docker for Android SDK 30 with preinstalled build tools and emulator image
 
 - Interactive way
   ```bash
-  $ docker run -it --rm --privileged androidsdk/android-30:latest bash
+  $ docker run -it --rm --device /dev/kvm androidsdk/android-30:latest bash
   # check installed packages
   $ sdkmanager --list
   # create and run emulator
@@ -32,7 +32,7 @@ Docker for Android SDK 30 with preinstalled build tools and emulator image
   # You can also run other Android platform tools, which are all added to the PATH environment variable
   ```
 
-  To connect the emulator using `adb` on the docker host machine, start the container with `--net=host`.
+  To connect the emulator using `adb` on the docker host machine, start the container with `--network host` as well.
   You could also use [`scrcpy`](https://github.com/Genymobile/scrcpy) to do a screencast of the emulator.
 
 - Non-interactive way
